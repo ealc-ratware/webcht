@@ -1,0 +1,10 @@
+<% if(!data.has_messages) { %>
+  <h2 id="chat-messages-empty" class="note">No Messages</h2>
+<% } %>
+<ul id="chat-messages"><%= data.messages %></ul>
+<div id="new-message">
+  <form id="new-message-form">
+  	<input type="text" id="new-message-text" placeholder="Message" /><!--
+  	--><button class="btn btn-send-message" id="new-message-button" type="submit" disabled>Send</button>
+  </form>
+</div>
